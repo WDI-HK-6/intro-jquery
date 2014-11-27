@@ -5,11 +5,12 @@
     <link rel="stylesheet" type="text/css" href="css/theme.css">
   </head>
 
-  <body>
-<!--     <h1>Hello World!</h1>
+  <body class="body-background">
+    <h1>Hello World!</h1>
     <p id="name">Harry</p>
     <p class="human">Victor</p>
-    <span class="human">Clement</span> -->
+    <span class="human">Clement</span>
+    
     <h1>Courses</h1>
     <ul class="courses">
       <li id="chemistry">Chemistry</li>
@@ -26,10 +27,18 @@
       <li>Sports</li>
     </ul>
 
+    <h1>Food</h1>
     <ol class="food">
-        <li>Fruit</li>
-        <li>Apple</li>
+        <li id="fruit" data-expensive='{"id": "harry", "price": "2"}'>Fruit</li>
+        <li data-serial="13412341234">Apple</li>
     </ol>
+
+    <button id="apple" data-serial="13412341234">
+      Buy this Macintosh Apple
+    </button>
+      
+
+    </button>
 
     <!-- we want these javascript files to be loaded after all the HTML elements -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
